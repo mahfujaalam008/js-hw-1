@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<!--meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap5</title>
+    <!--css links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <h2>My First JavaScript</h2>
+      <p id="date"></p>
+      <button type="button"
+      onclick="document.getElementById('date').innerHTML = Date()">
+      Click me to display Date and Time.</button>
+
+      <hr>
+
+    <!--show hidden HTML elements-->
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="demo" style="display:none">Hello JavaScript!</p>
+      <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!
+      </button>
+
+    <hr>
+
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+    <script>
+    window.alert(5 + 6);
+    </script>
+    <hr>
+
+    <!--change HTML content-->
+    <h2>What Can JavaScript Do?</h2>
+    <p id="take" style="color: red;">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("take").innerHTML = "Hello JavaScript!"'>Click Me!
+    </button>
+
+    <hr>
+   
+    <h2>JavaScript const</h2>
+    <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+    <p id="const"></p>
+    <script>
+    // Create an Array:
+    const cars = ["Saab", "Volvo", "BMW"];
+
+    // Change an element:
+    cars[0] = "Toyota";
+
+    // Add an element:
+    cars.push("Audi");
+
+    // Display the Array:
+    document.getElementById("const").innerHTML = cars; 
+    </script>
+
+    <hr>
+
+   <!--javascript operators-->
+     <h2>JavaScript Operators</h2>
+     <p id="addition"></p>
+     <p id="Subtraction"></p>
+     <p id="Multiplication"></p>
+
+   <script>
+    let a,x,y,z;
+     x=10;
+     y=5;
+     a=7
+     z=(x+y)*a;
+     document.getElementById("addition").innerHTML="Total value of z is:" + z ;
+
+
+     let b,c,d;
+     b=20;
+     c=5;
+     d=b*c;
+
+     document.getElementById("Subtraction").innerHTML=  d ;
+
+     let s,h,f;
+     s=2;
+     h=6;
+     f=s*h;
+     document.getElementById("Multiplication").innerHTML= f ;
+
+   </script>
+   <hr>
+  <button onclick="window.print()">Print this page</button>
+   
+    </div>
+    <!--js links-->
+   <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
